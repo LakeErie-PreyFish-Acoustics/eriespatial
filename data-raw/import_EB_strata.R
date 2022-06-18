@@ -2,10 +2,14 @@
 library(sf)
 library(ggplot2)
 
-ebstra4 <- sf::st_read("data-raw/eb_strata_4")
-ebstrata <- ggplot() +
-  geom_sf(data = ebstra4, aes(fill = STRATUM)) +
+shape_ebstrata <- sf::st_read("data-raw/eb_strata_4")
+base_ebstrata <- ggplot() +
+  geom_sf(data = shape_ebstrata) +
+  geom_sf_label(data = shape_ebstrata, aes(label = STRATUM), size = 2) +
   theme_classic() +
-  theme(legend.position = "None")
+  theme(legend.position = "None",
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank())
 
-usethis::use_data(ebstrata, overwrite = TRUE)
+usethis::use_data(base_ebstrata, overwrite = TRUE)
+usethis::use_data(shape_ebstrata, overwrite = TRUE)
