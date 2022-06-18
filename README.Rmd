@@ -9,16 +9,19 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "60%",
+  warning = FALSE
 )
 ```
 
 # eriespatial
 
 <!-- badges: start -->
+![R badge](https://img.shields.io/badge/R-276DC3?style=for-the-badge&logo=r&logoColor=white)
+![develoment badge](https://img.shields.io/badge/Dev-InProgress-<COLOR>.svg)
 <!-- badges: end -->
 
-The goal of eriespatial is to ...
+The goal of eriespatial is to provide common Lake Erie shapefiles for R users. Shapefiles have generally been imported as an `sf` object and also plotted as a base `ggplot2` object. The `sf` objects follow the naming convention of `shape_[area]`. The `ggplot2` objects follow the naming convention of `base_[area]`.
 
 ## Installation
 
@@ -30,14 +33,23 @@ devtools::install_github("LakeErie-PreyFish-Acoustics/eriespatial")
 ```
 
 ## Example
-
-This is a basic example which shows you how to solve a common problem:
-
 ```{r example}
 library(eriespatial)
-## basic example code
-data("ebstrata")
-ebstrata
+library(sf)
+library(ggplot2)
+## view the sf shapefile
+data("shape_ebstrata")
+shape_ebstrata
+# plot(shape_ebstrata)
+## view ggplot basemap
+data("base_ebstrata")
+base_ebstrata
 ```
 
+### Add custom points to base ggplot
+```{r addpoints}
+pointdata <- data.frame(LON = c(-79.8, -80, -79.2), LAT = c(42.3, 42.4, 42.7))
+pointdata <- st_as_sf(pointdata, coords = c("LON", "LAT"), crs=4269)
+base_ebstrata + geom_sf(data = pointdata, color = 'red')
+```
 
