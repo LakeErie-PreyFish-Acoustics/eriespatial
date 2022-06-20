@@ -2,7 +2,7 @@
 library(sf)
 library(ggplot2)
 
-shape_ebstrata <- sf::st_read("data-raw/eb_strata_4")
+shape_ebstrata <- sf::st_read("data-raw/eb_strata_2")
 base_ebstrata <- ggplot() +
   geom_sf(data = shape_ebstrata) +
   geom_sf_label(data = shape_ebstrata, aes(label = STRATUM), size = 2) +
