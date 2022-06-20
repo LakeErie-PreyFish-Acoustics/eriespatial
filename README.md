@@ -19,7 +19,7 @@ naming convention of `base_[area]`.
 
 ## Installation
 
-You can install the development version of eriespatial from
+You can install the development version of `eriespatial` from
 [GitHub](https://github.com/) with:
 
 ``` r
@@ -70,3 +70,11 @@ base_ebstrata + geom_sf(data = pointdata, color = 'red')
 ```
 
 <img src="man/figures/README-addpoints-1.png" width="60%" />
+
+### Combining multiple layers
+
+``` r
+base_erieshore + geom_sf(data=shape_ebstrata, aes(fill = STRATUM))
+```
+
+<img src="man/figures/README-multiple layers-1.png" width="60%" />

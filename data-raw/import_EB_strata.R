@@ -13,3 +13,14 @@ base_ebstrata <- ggplot() +
 
 usethis::use_data(base_ebstrata, overwrite = TRUE)
 usethis::use_data(shape_ebstrata, overwrite = TRUE)
+
+shape_erieshore <- sf::st_read("data-raw/Lake_Erie_Shoreline")
+base_erieshore <- ggplot() +
+  geom_sf(data = shape_erieshore) +
+  theme_classic() +
+  theme(legend.position = "None",
+        axis.title.x=element_blank(),
+        axis.title.y=element_blank())
+
+usethis::use_data(base_erieshore, overwrite = TRUE)
+usethis::use_data(shape_erieshore, overwrite = TRUE)
