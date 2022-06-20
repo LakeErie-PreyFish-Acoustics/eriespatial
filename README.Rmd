@@ -48,14 +48,16 @@ base_ebstrata
 
 ### Add custom points to base ggplot
 ```{r addpoints}
-pointdata <- data.frame(LON = c(-79.8, -80, -79.2), LAT = c(42.3, 42.4, 42.7))
-pointdata <- st_as_sf(pointdata, coords = c("LON", "LAT"), crs=4269)
+pointdata <-
+  data.frame(LON = c(-79.8,-80,-79.2),
+             LAT = c(42.3, 42.4, 42.7))
+pointdata <- st_as_sf(pointdata, coords = c("LON", "LAT"), crs = 4269)
 base_ebstrata + geom_sf(data = pointdata, color = 'red')
 ```
 
 
 ### Combining multiple layers
 ```{r multiple layers}
-base_erieshore + geom_sf(data=shape_ebstrata, aes(fill = STRATUM))
+base_erieshore + geom_sf(data = shape_ebstrata, aes(fill = STRATUM))
 ```
 
