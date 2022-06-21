@@ -34,7 +34,7 @@ shape_jurisdictions <- shape_jurisdictions[which(shape_jurisdictions$gu_a3 %in% 
 
 bound_box <- c(xmin = -83.6849, ymin = 41.1825, xmax = -78.6861, ymax = 43.0365)
 
-base_jurisditions <- ggplot() +
+base_jurisdictions <- ggplot() +
   geom_sf(data = shape_jurisdictions) +
   geom_sf(data = shape_erieshore, fill = "#c5dfed") +
   annotate("text", x = -82, y = 41.35, label = "Ohio",
@@ -57,5 +57,5 @@ base_jurisditions <- ggplot() +
   )
 
 usethis::use_data(shape_jurisdictions, overwrite = TRUE)
-usethis::use_data(base_jurisditions, overwrite = TRUE)
+usethis::use_data(base_jurisdictions, overwrite = TRUE)
 
