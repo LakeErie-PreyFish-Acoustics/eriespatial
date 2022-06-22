@@ -2,7 +2,9 @@
 #' @title shape_jurisdictions
 #' @name shape_jurisdictions
 #'
-#' @description Lake Erie states and province as shapefile
+#' @description Lake Erie states and province as shapefile. Data from Natural Earth (public domain, available:naturalearthdata.com).
+
+
 #'
 #' @format an sf spatial data frame
 #'

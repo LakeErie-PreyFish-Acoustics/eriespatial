@@ -29,8 +29,7 @@ base_erieshore <- ggplot() +
 usethis::use_data(base_erieshore, overwrite = TRUE)
 usethis::use_data(shape_erieshore, overwrite = TRUE)
 
-shape_jurisdictions <- sf::st_read("data-raw/us_and_canada")
-shape_jurisdictions <- shape_jurisdictions[which(shape_jurisdictions$gu_a3 %in% c("USA", "CAN")),]
+shape_jurisdictions <- sf::st_read("data-raw/erie_jurisdictions")
 
 bound_box <- c(xmin = -83.6849, ymin = 41.1825, xmax = -78.6861, ymax = 43.0365)
 

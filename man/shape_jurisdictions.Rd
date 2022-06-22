@@ -7,7 +7,7 @@
 an sf spatial data frame
 }
 \description{
-Lake Erie states and province as shapefile
+Lake Erie states and province as shapefile. Data from Natural Earth (public domain, available:naturalearthdata.com).
 }
 \examples{
 \dontrun{
