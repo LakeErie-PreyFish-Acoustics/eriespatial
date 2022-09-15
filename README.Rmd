@@ -61,3 +61,12 @@ base_ebstrata + geom_sf(data = pointdata, color = 'red')
 base_erieshore + geom_sf(data = shape_ebstrata, aes(fill = STRATUM))
 ```
 
+
+### Additional Strata
+```{r cbstrata}
+base_cbstrata
+```
+
+```{r wbstrata}
+base_wbstrata
+```
