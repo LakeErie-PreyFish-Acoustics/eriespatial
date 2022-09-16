@@ -103,3 +103,17 @@ base_5mingrid <- ggplot() +
 usethis::use_data(base_5mingrid, overwrite = TRUE)
 usethis::use_data(shape_5mingrid, overwrite = TRUE)
 
+
+shape_lestrata <- sf::st_read("data-raw/le_strata")
+base_lestrata <- ggplot() +
+  geom_sf(data = shape_lestrata) +
+  theme_classic() +
+  theme(
+    legend.position = "None",
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  )
+
+usethis::use_data(base_lestrata, overwrite = TRUE)
+usethis::use_data(shape_lestrata, overwrite = TRUE)
+
