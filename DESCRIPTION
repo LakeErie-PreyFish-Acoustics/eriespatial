@@ -1,7 +1,7 @@
 Package: eriespatial
 Type: Package
 Title: Provides spatial layers of Lake Erie for use in R based analysis
-Version: 0.0.1.9000
+Version: 0.0.1.9001
 Author: Lake Erie Forage Task Group
 Maintainer: Jeremy Holden <jeremy.holden@ontario.ca>
 Description: The Lake Erie Forage Task Group produces several reports and data products for assessment activities on Lake Erie. This package serves to support those efforts by providing a common repository for commonly used shapefiles.
