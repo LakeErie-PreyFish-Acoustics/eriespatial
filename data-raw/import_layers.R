@@ -117,3 +117,17 @@ base_lestrata <- ggplot() +
 usethis::use_data(base_lestrata, overwrite = TRUE)
 usethis::use_data(shape_lestrata, overwrite = TRUE)
 
+
+
+shape_5mincent_surv <- sf::st_read("data-raw/le_5min_cent_surv")
+base_5mincent_surv <- ggplot() +
+  geom_sf(data = shape_5mincent_surv) +
+  theme_classic() +
+  theme(
+    legend.position = "None",
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  )
+
+usethis::use_data(base_5mincent_surv, overwrite = TRUE)
+usethis::use_data(shape_5mincent_surv, overwrite = TRUE)
