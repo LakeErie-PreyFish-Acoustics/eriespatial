@@ -2,7 +2,7 @@
 #' @title shape_5mingrid_surv
 #' @name shape_5mingrid_surv
 #'
-#' @description Lake Erie 5-minute grid within survey bounds as shapefile
+#' @description Lake Erie 5-minute grid within survey area as shapefile
 #'
 #' @format an sf spatial data frame
 #'
@@ -21,7 +21,7 @@ shape_5mingrid_surv
 
 #' base_5mingrid_surv
 #' @name base_5mingrid_surv
-#' @description Lake Erie 5-minute grid within survey bounds as base ggplot object
+#' @description Lake Erie 5-minute grid within survey area as base ggplot object
 #'
 #' @format a ggplot object with the strata as a geom_sf() object
 #'
