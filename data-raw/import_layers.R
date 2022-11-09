@@ -88,3 +88,32 @@ base_jurisdictions <- ggplot() +
 usethis::use_data(shape_jurisdictions, overwrite = TRUE)
 usethis::use_data(base_jurisdictions, overwrite = TRUE)
 
+
+
+shape_5mingrid <- sf::st_read("data-raw/le_5min_grid")
+base_5mingrid <- ggplot() +
+  geom_sf(data = shape_5mingrid) +
+  theme_classic() +
+  theme(
+    legend.position = "None",
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  )
+
+usethis::use_data(base_5mingrid, overwrite = TRUE)
+usethis::use_data(shape_5mingrid, overwrite = TRUE)
+
+
+shape_lestrata <- sf::st_read("data-raw/le_strata")
+base_lestrata <- ggplot() +
+  geom_sf(data = shape_lestrata) +
+  theme_classic() +
+  theme(
+    legend.position = "None",
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
+  )
+
+usethis::use_data(base_lestrata, overwrite = TRUE)
+usethis::use_data(shape_lestrata, overwrite = TRUE)
+
