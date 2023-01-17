@@ -5,7 +5,7 @@ Version: 0.0.1.9001
 Author: Lake Erie Forage Task Group
 Maintainer: Jeremy Holden <jeremy.holden@ontario.ca>
 Description: The Lake Erie Forage Task Group produces several reports and data products for assessment activities on Lake Erie. This package serves to support those efforts by providing a common repository for commonly used shapefiles.
-License: What license is it under?
+License: CC BY 4.0
 Encoding: UTF-8
 LazyData: true
 Imports: 
