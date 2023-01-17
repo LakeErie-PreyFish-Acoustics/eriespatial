@@ -32,7 +32,7 @@ devtools::install_github("LakeErie-PreyFish-Acoustics/eriespatial")
 ``` r
 library(eriespatial)
 library(sf)
-#> Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE
+#> Linking to GEOS 3.9.3, GDAL 3.5.2, PROJ 8.2.1; sf_use_s2() is TRUE
 library(ggplot2)
 ## view the sf shapefile
 data("shape_ebstrata")
@@ -53,7 +53,7 @@ shape_ebstrata
 #> 8     EB     S22  S22      375 POLYGON ((-79.52855 42.6150...
 #> 9     EB     S23  S23      229 POLYGON ((-79.06974 42.7886...
 #> 10    EB     S24  S24      305 POLYGON ((-79.32086 42.6942...
-# plot(shape_ebstrata)
+
 ## view ggplot basemap
 data("base_ebstrata")
 base_ebstrata
@@ -79,7 +79,7 @@ base_ebstrata + geom_sf(data = pointdata, color = 'red')
 base_erieshore + geom_sf(data = shape_ebstrata, aes(fill = STRATUM))
 ```
 
-<img src="man/figures/README-multiple layers-1.png" width="60%" />
+<img src="man/figures/README-multiple_layers-1.png" width="60%" />
 
 ### Additional Strata
 
@@ -98,7 +98,7 @@ base_wbstrata
 ### 5 minute grid
 
 ``` r
-base_erieshore + geom_sf(data = shape_5mingrid, alpha = 0.1)
+base_erieshore + geom_sf(data = shape_5mingrid_surv, alpha = 0.1)
 ```
 
 <img src="man/figures/README-fivemingrid-1.png" width="60%" />

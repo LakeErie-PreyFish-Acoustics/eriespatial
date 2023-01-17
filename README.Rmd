@@ -40,7 +40,7 @@ library(ggplot2)
 ## view the sf shapefile
 data("shape_ebstrata")
 shape_ebstrata
-# plot(shape_ebstrata)
+
 ## view ggplot basemap
 data("base_ebstrata")
 base_ebstrata
@@ -57,7 +57,7 @@ base_ebstrata + geom_sf(data = pointdata, color = 'red')
 
 
 ### Combining multiple layers
-```{r multiple layers}
+```{r multiple_layers}
 base_erieshore + geom_sf(data = shape_ebstrata, aes(fill = STRATUM))
 ```
 
@@ -73,6 +73,6 @@ base_wbstrata
 
 ### 5 minute grid
 ```{r fivemingrid}
-base_erieshore + geom_sf(data = shape_5mingrid, alpha = 0.1)
+base_erieshore + geom_sf(data = shape_5mingrid_surv, alpha = 0.1)
 ```
 
