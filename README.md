@@ -98,7 +98,7 @@ base_wbstrata
 ### 5 minute grid
 
 ``` r
-base_erieshore + geom_sf(data = shape_5mingrid, alpha = 0.1)
+base_erieshore + geom_sf(data = shape_5mingrid_surv, alpha = 0.1)
 ```
 
 <img src="man/figures/README-fivemingrid-1.png" width="60%" />

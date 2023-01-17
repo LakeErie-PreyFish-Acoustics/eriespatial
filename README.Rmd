@@ -73,6 +73,6 @@ base_wbstrata
 
 ### 5 minute grid
 ```{r fivemingrid}
-base_erieshore + geom_sf(data = shape_5mingrid, alpha = 0.1)
+base_erieshore + geom_sf(data = shape_5mingrid_surv, alpha = 0.1)
 ```
 
