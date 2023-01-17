@@ -40,7 +40,7 @@ library(ggplot2)
 ## view the sf shapefile
 data("shape_ebstrata")
 shape_ebstrata
-# plot(shape_ebstrata)
+
 ## view ggplot basemap
 data("base_ebstrata")
 base_ebstrata
