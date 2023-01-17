@@ -57,7 +57,7 @@ base_ebstrata + geom_sf(data = pointdata, color = 'red')
 
 
 ### Combining multiple layers
-```{r multiple layers}
+```{r multiple_layers}
 base_erieshore + geom_sf(data = shape_ebstrata, aes(fill = STRATUM))
 ```
 

@@ -32,7 +32,7 @@ devtools::install_github("LakeErie-PreyFish-Acoustics/eriespatial")
 ``` r
 library(eriespatial)
 library(sf)
-#> Linking to GEOS 3.9.1, GDAL 3.2.1, PROJ 7.2.1; sf_use_s2() is TRUE
+#> Linking to GEOS 3.9.3, GDAL 3.5.2, PROJ 8.2.1; sf_use_s2() is TRUE
 library(ggplot2)
 ## view the sf shapefile
 data("shape_ebstrata")
@@ -79,7 +79,7 @@ base_ebstrata + geom_sf(data = pointdata, color = 'red')
 base_erieshore + geom_sf(data = shape_ebstrata, aes(fill = STRATUM))
 ```
 
-<img src="man/figures/README-multiple layers-1.png" width="60%" />
+<img src="man/figures/README-multiple_layers-1.png" width="60%" />
 
 ### Additional Strata
 
