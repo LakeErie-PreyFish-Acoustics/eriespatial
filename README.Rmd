@@ -24,6 +24,8 @@ knitr::opts_chunk$set(dev = "png", dev.args = list(type = "cairo-png"))
 
 The goal of eriespatial is to provide common Lake Erie shapefiles for R users. Shapefiles have generally been imported as an `sf` object and also plotted as a base `ggplot2` object. The `sf` objects follow the naming convention of `shape_[area]`. The `ggplot2` objects follow the naming convention of `base_[area]`.
 
+Follow version changes and view contributors in [NEWS](NEWS.md).
+
 ## Installation
 
 You can install the development version of `eriespatial` from [GitHub](https://github.com/) with:

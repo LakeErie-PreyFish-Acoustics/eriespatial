@@ -17,6 +17,8 @@ also plotted as a base `ggplot2` object. The `sf` objects follow the
 naming convention of `shape_[area]`. The `ggplot2` objects follow the
 naming convention of `base_[area]`.
 
+Follow version changes and view contributors in [NEWS](NEWS.md).
+
 ## Installation
 
 You can install the development version of `eriespatial` from
