@@ -1,3 +1,5 @@
+# eriespatial 0.2.0
+
 # eriespatial 0.1.0
 `eriespatial` 0.1.0 is available. 
 
